@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import Calendar from "~/components/calendar/calendar";
+import Calendar from "~/components/calendario/calendar";
 
 export function meta({}: Route.MetaArgs) {
   return [

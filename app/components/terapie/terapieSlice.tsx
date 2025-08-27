@@ -5,6 +5,7 @@ interface therapieType {
   id: string;
   nome: string;
   tipo: string;
+  ora: string;
   dataInizio: string;
   dataFine: string;
 }
@@ -17,7 +18,14 @@ interface therapieState {
 }
 
 const initialState: therapieState = {
-  items: [],
+  items: [{
+    id: '1',
+    nome: 'medicina pressione',
+    tipo: 'bg-amber-200',
+    ora: '10:30',
+    dataInizio: '2025-08-02',
+    dataFine: '2025-09-19'
+  }],
   status: 'idle',
   error: null,
 };
@@ -37,7 +45,7 @@ const terapieSlice = createSlice({
       if (index !== -1)
         //Immer permette di modificare gli stati anche se sono immutabili, fa tutto lui
         state.items[index] = action.payload;
-      },
+    },
     
       therapyDelete: (state, action: PayloadAction<string>) => {
           const index = state.items.findIndex((elemento) => elemento.id === action.payload);

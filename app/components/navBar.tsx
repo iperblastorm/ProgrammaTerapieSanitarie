@@ -12,18 +12,27 @@ const NavBar = () => {
         </li>
         <li>
           <Link className="m-4 text-xl" to={'/InserisciDati'}>
-            Inserisci Dati
+            Dati Paziente
           </Link>
         </li>
         <li>
-          <Link className="m-4 text-xl" to={'/'}>
-            Ricette
+          <Link className="m-4 text-xl" to={'/CheckList'}>
+            Check List
+          </Link>
+        </li>
+        <li>
+          <Link className="m-4 text-xl" to={'/AndamentoPaziente'}>
+            Andamento Paziente
           </Link>
         </li>
         <li>
           <Link className="m-4 text-xl" to={'/Impostazioni'}>
             Impostazioni
           </Link>
+        </li>
+        <li>
+          <Link className='m-4 text-6xl' to={'/Faq'}>
+          FAQ</Link>
         </li>
       </ul>
     </nav>

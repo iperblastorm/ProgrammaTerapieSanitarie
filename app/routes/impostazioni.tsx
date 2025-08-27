@@ -5,7 +5,7 @@ const Impostazioni = () => {
 
     return (
         <div>
-            <h1>alalala</h1>
+            <h1>QUI PUOI MODIFICARE LE IMPOSTAZIONI DEL PROGRAMMA.</h1>
         </div>
     )
 }

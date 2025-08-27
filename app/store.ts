@@ -1,12 +1,16 @@
 import { configureStore } from '@reduxjs/toolkit'
-import patologieReducer from './slice/patologieSlice'
-import calendarReducer from './components/calendar/calendarSlice'
+import patologieReducer from './components/patologie/patologieSlice'
+import terapieReducer from './components/terapie/terapieSlice'
+import visiteReducer from './components/visite/visiteSlice'
+import datiPaziente from './components/datiPaziente/datiPazienteSlice'
 
 
 export const store = configureStore({
   reducer: {
     patologie: patologieReducer,
-    calendario: calendarReducer ,
+    terapie: terapieReducer,
+    visite: visiteReducer,
+    datiPaziente: datiPaziente,
   }
 })
 
